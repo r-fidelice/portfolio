@@ -9,7 +9,7 @@ html{
 body{
     background-color: #fff!important;
     height: 100v;
-    overflow-x: hidden;
+    
 }
 
 /* nav */
@@ -79,8 +79,15 @@ body{
 }
 .btn-bg:hover{
     background-color: #fff;
-    color: #141414!important;
+    color: gray!important;
     
+}
+.navbar-nav .nav-link{
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+.navbar-nav .nav-link:hover{
+    color: goldenrod;
 }
 
 /* section-one */
@@ -93,13 +100,14 @@ body{
 }
 .section-box h2{
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .vh-500{
     height: 500px;
     display: flex;
     align-items: center;
 }
+
 .vh-300{
     height: 350px;
     display: flex;
@@ -120,7 +128,7 @@ body{
     font-weight: 300;
 }
 article h3{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 300;
 }
 article h4{
@@ -155,4 +163,36 @@ article h4{
 }
 textarea{
     height: 200px;
+}
+/* Tabl*/
+@media(max-width:768px){
+    .vh-500{
+        height: auto;
+    }
+    .section-projet{
+        height: auto;
+    }
+}
+
+@media(max-width:768px){
+    .vh-300{
+        height: auto;
+    }
+}
+/* phone */
+@media(max-width:320px){
+    .vh-500{
+        height: auto;
+    }
+    .section-projet{
+        height: auto;
+    }
+}
+@media(max-width:320px){
+    .vh-300{
+        height: auto;
+    }
+    h2{
+        font-size: 30px!important;
+    }
 }
